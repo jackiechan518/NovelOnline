@@ -1,0 +1,445 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* background-image: url(https://img5.thuthuatphanmem.vn/uploads/2021/11/26/hinh-nen-phong-canh-co-trang-cho-may-tinh_010559903.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+#header {
+    background: url(https://img.zing.vn/products/jx1m/skin-2020/images/themes/nav-bg.png) center / 1490px 100px no-repeat;
+
+    backdrop-filter: blur(1rem);
+    border: 1px solid transparent;
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+
+    /* border-top-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.1); */
+
+}
+
+
+#header>a {
+    color: black;
+    text-decoration: none;
+}
+
+/* MENU */
+
+
+nav ul.menu {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li.rank,
+nav ul li.category {
+    position: relative;
+}
+
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    line-height: 70px;
+}
+
+nav ul ul.sub-menu-category {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    width: 320px;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+}
+
+ul.sub-menu-category a,
+ul.sub-menu-rank a {
+    color: black;
+}
+
+nav ul ul.sub-menu-rank {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    width: 140px;
+    padding: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+}
+
+nav ul ul.sub-menu-category li {
+    display: inline-block;
+    width: 100px;
+}
+
+nav ul ul.sub-menu-rank li {
+    display: inline-block;
+}
+
+nav ul ul.sub-menu-category li a,
+nav ul ul.sub-menu-rank li a {
+    line-height: 18px;
+}
+
+
+nav ul li.category:hover,
+nav ul li.rank:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeInDown 0.4s ease forwards;
+}
+
+
+nav ul ul li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li ul li a:hover {
+    color: orange;
+    transition: color 0.5s
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SEARCH BOX */
+
+#search-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: white; */
+    padding: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#search-box:hover,
+#search-box:focus-within {
+    box-shadow: 0 0 16px 8px rgba(39, 169, 255, 0.2);
+}
+
+#search-box #search-text {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#search-box #search-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#search-btn .icon-search {
+    color: black;
+    font-size: 18px;
+}
+
+/* END SEARCH BOX */
+
+
+/*  UPLOAD, REGISTER */
+ul.menu a.upload-novel:hover,
+ul.menu a.login:hover,
+ul.menu a.register:hover {
+    color: orange;
+    transition: color 0.3s
+}
+
+/* END UPLOAD, REGISTER */
+
+/* END HEADER */
+
+/* WP-CONTENT */
+#carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.view_all:hover {
+    color: orange !important;
+    transition: all 0.5s;
+}
+
+/* END WP-CONTENT */
+
+#new_update table {
+    margin: 25px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#new_update table thead tr {
+    background-color: #ccc;
+    font-weight: bold;
+    color: white;
+    color: black;
+}
+
+#new_update table th,
+#new_update table td {
+    padding: 12px 15px;
+}
+
+#new_update table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#new_update table tbody tr:last-of-type {
+    border-bottom: 2px solid #ccc;
+}
+
+#new_update .view_all:hover {
+    color: orange !important;
+    transition: all 0.5s;
+}
+
+#new_update tbody td a {
+    text-decoration: none;
+}
+
+/* RANKING */
+#ranking .ranking_header .view_all:hover {
+    color: orange !important;
+    transition: all 0.5s;
+}
+
+#ranking .wp_all_rank {
+    justify-content: space-between;
+    border-bottom: 1 solid black;
+}
+
+#ranking .wp_all_rank .rank_top {
+    padding-top: 25px;
+    margin-left: 50px;
+}
+
+.wp_rank_content .rank_title a {
+    color: #01060f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#ranking .ranking_center {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* END RANKING */
+
+
+
+
+/* BOOK */
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 600px;
+    /* margin-right: 500px; */
+}
+
+@keyframes initAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(-30deg);
+    }
+}
+
+.book {
+    width: 75px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    transition: 1s ease;
+    animation: 1s ease 0s 1 initAnimation;
+}
+
+.book:hover {
+    transform: rotateY(0deg);
+}
+
+.book> :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 75px;
+    height: 100px;
+    transform: translateZ(25px);
+    background-color: #01060f;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 5px 5px 20px #666;
+}
+
+.book::before {
+    position: absolute;
+    content: ' ';
+    background-color: blue;
+    left: 0;
+    top: 3px;
+    width: 48px;
+    height: 94px;
+    transform: translateX(47px) rotateY(90deg);
+    background: linear-gradient(90deg,
+            #fff 0%,
+            #f9f9f9 5%,
+            #fff 10%,
+            #f9f9f9 15%,
+            #fff 20%,
+            #f9f9f9 25%,
+            #fff 30%,
+            #f9f9f9 35%,
+            #fff 40%,
+            #f9f9f9 45%,
+            #fff 50%,
+            #f9f9f9 55%,
+            #fff 60%,
+            #f9f9f9 65%,
+            #fff 70%,
+            #f9f9f9 75%,
+            #fff 80%,
+            #f9f9f9 85%,
+            #fff 90%,
+            #f9f9f9 95%,
+            #fff 100%);
+}
+
+.book::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 75px;
+    height: 100px;
+    transform: translateZ(-25px);
+    background-color: #01060f;
+    border-radius: 0 2px 2px 0;
+    box-shadow: -10px 0 50px 10px #666;
+}
+
+/* END BOOK */
+
+/* RATE */
+
+#rate .content_had_read .score {
+    top: 15px;
+    right: 25px;
+}
+
+#rate .score {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: #f03a3a;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#rate img.avatar_rate, .avatar_mention{
+    border: 0.5px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* END RATE */
+
+
+/* FOOTER */
+#footer{
+    background-image: url(../img/footer-bg.png);
+}
+/* END FOOTER */
+
+/* OUTSIDE */
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass:hover {
+    animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        border-color: #f00;
+    }
+
+    33% {
+        border-color: #0f0;
+    }
+
+    66% {
+        border-color: #00f;
+    }
+
+    100% {
+        border-color: #f00;
+    }
+}
+
+.truncate {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
